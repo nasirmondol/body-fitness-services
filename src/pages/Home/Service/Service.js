@@ -1,13 +1,17 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 import './Service.css'
 
-const Service = ({service}) => {
-    const {name, id, img, price} = service;
+const Service = ({ service }) => {
+    const { name, id, img, price } = service;
     return (
         <div className='service'>
             <img className='image' src={img} alt="" />
-            <h5>{name}</h5>
-            <h6>Name: ${price}</h6>
+            <h5 className=' m-2 text-primary'>{name}</h5>
+            <h6 className=' m-2 text-primary'>Name: ${price}</h6>
+            <Button className='m-2 my-3 font-bold align-items-center w-50 d-flex' variant='warning'>
+                Check out
+            </Button>
         </div>
     );
 };
