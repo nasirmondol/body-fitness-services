@@ -6,6 +6,7 @@ import auth from '../../firebase.init';
 import Loading from '../../Loading/Loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import SocialLogin from '../../Shared/SocialLogin/SocialLogin';
 // import Loading from '../Loading/Loading';
 // import SocialLogin from './SocialLogin/SocialLogin';
 
@@ -13,9 +14,9 @@ const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
-    // const navigate = useNavigate();
-    // const location = useLocation();
-    // const from = location.state?.from?.pathname || ('/');
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || ('/');
 
     const [
         signInWithEmailAndPassword,
@@ -28,9 +29,9 @@ const Login = () => {
         return <Loading />
     }
 
-    // if (user) {
-    //     navigate(from, { replace: true })
-    // }
+    if (user) {
+        navigate(from, { replace: true })
+    }
 
     const handleEmail = event => {
         setEmail(event.target.value);
@@ -66,7 +67,7 @@ const Login = () => {
                 </Button>
                 <p className='d-flex justify-content-start'>New to genius car? <Link className='text-primary text-decoration-none ms-2' to='/register'>Please register</Link></p>
                 <p className='d-flex justify-content-start'>Forgot password? <Link className='text-primary text-decoration-none ms-2'>Reset Password</Link></p>
-                {/* <SocialLogin /> */}
+                <SocialLogin />
                 <ToastContainer />
             </Form>
 

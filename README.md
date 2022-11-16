@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+<h3>Five Bullet point about this project</h3>
+<li>Create website by using react router dom.</li>
+<li>Firebase authentication system is also present and implement here</li>
+<li>By using Firebase Login and registration system does the implement here.</li>
+<li>Protected Route system is also present this site.</li>
+<li>By using Firebase email verification setup complete and verified users.</li>
+
 ## Available Scripts
 
 In the project directory, you can run:

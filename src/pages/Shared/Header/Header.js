@@ -14,8 +14,8 @@ const Header = () => {
     await signOut(auth)
   }
   return (
-    <div>
-      <Navbar collapseOnSelect fixed='top' expand="lg" bg="dark" variant="dark">
+    <div >
+      <Navbar className='mb-4' collapseOnSelect fixed='top' expand="lg" bg="dark" variant="dark">
         <Container>
           <Navbar.Brand as={Link} to="/home">
             <img className='rounded-circle' src={logo} alt="" />

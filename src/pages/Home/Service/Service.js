@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Service.css'
 
 const Service = ({ service }) => {
@@ -10,7 +11,7 @@ const Service = ({ service }) => {
             <h5 className=' m-2 text-primary'>{name}</h5>
             <h6 className=' m-2 text-primary'>Name: ${price}</h6>
             <Button className='m-2 my-3 font-bold align-items-center w-50 d-flex' variant='warning'>
-                Check out
+                <Link to='/blogs'>Check Out</Link>
             </Button>
         </div>
     );

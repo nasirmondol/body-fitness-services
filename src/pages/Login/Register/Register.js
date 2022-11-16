@@ -3,6 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile, useSendEmailVerification } from 'react-firebase-hooks/auth';
+import SocialLogin from '../../Shared/SocialLogin/SocialLogin';
 
 const Register = () => {
     const [email, setEmail] = useState('')
@@ -61,7 +62,7 @@ const Register = () => {
                     Register
                 </Button>
                 <p className='d-flex justify-content-start'>Already have an account? <Link className='text-primary text-decoration-none ms-2' to='/login'>Please login</Link></p>
-                {/* <SocialLogin/> */}
+                <SocialLogin/>
             </Form>
 
         </div>

@@ -7,10 +7,10 @@ import banner3 from '../../../../images/banner/gym banner3.webp'
 const Banner = () => {
     return (
         <div >
-            <Carousel className='mt-4 p-3'>
+            <Carousel className='mt-5 p-3'>
                 <Carousel.Item>
                     <img
-                        height={400}
+                        height={450}
                         className="d-block w-100"
                         src={banner1}
                         alt="First slide"
@@ -22,7 +22,7 @@ const Banner = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        height={400}
+                        height={450}
                         className="d-block w-100"
                         src={banner2}
                         alt="Second slide"
@@ -30,7 +30,7 @@ const Banner = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        height={400}
+                        height={450}
                         className="d-block w-100"
                         src={banner3}
                         alt="Third slide"
